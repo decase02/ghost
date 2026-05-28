@@ -1,0 +1,49 @@
+{
+  "collapse": false,
+  "colorGroups": [
+    {
+      "query": "tag:coordinator",
+      "color": {
+        "a": 1,
+        "rgb": 16744272
+      }
+    },
+    {
+      "query": "tag:developer",
+      "color": {
+        "a": 1,
+        "rgb": 5013504
+      }
+    },
+    {
+      "query": "tag:topology",
+      "color": {
+        "a": 1,
+        "rgb": 255
+      }
+    },
+    {
+      "query": "tag:task-routing",
+      "color": {
+        "a": 1,
+        "rgb": 16744448
+      }
+    },
+    {
+      "query": "tag:plugin",
+      "color": {
+        "a": 1,
+        "rgb": 10494192
+      }
+    }
+  ],
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": false
+}
