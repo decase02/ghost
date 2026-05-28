@@ -95,16 +95,11 @@ export default defineConfig({
     // and the segfault happens only at process shutdown. CI handles
     // exit code 139 as success when results were reported (see test job).
     pool: 'threads',
-    poolOptions: {
-      threads: {
-        singleThread: false,
-        isolate: true,
-      },
-      forks: {
-        singleFork: false,
-        isolate: true,
-      },
-    },
+
+    // Vitest 4: poolOptions removed - isolate is now a top-level option.
+    // singleThread/singleFork were also removed in v4 (multi-thread is default).
+    isolate: true,
+
     // Per-file pool override: tests that need process.chdir() must run
     // in a forked subprocess (Node's worker threads forbid chdir).
     poolMatchGlobs: [
